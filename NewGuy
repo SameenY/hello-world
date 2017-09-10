@@ -163,7 +163,8 @@ p.themachine{
 	color: white;
 	position:relative;
 	left: 45px;
-	border-style: dashed;
+
+border-style: dashed;
 	border-color: yellow;
 }
 p.Root{
