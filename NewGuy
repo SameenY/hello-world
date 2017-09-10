@@ -24,3 +24,189 @@ img.watched{
 	height: 380px;
 
 }
+.Everyone{
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	position: relative;
+	left: 220px;
+	width: 600px;
+	height: 400px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+span.machine{
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+span.find{
+	font-size: 25px;
+	font-weight: bold;
+	color: red;
+}
+.acoto{
+	width: 1000px;
+	height: 400px;
+	padding-top: 30px;
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+img.themachine{
+	width: 250px;
+	height: 200px;
+}
+img.Cater{
+	border-style: dashed;
+	border-color: white;
+}
+div.Finch{
+	float: left;
+	width: 150px;
+	height: 150px;
+	padding-top: 30px;
+	padding-left: 50px;
+}
+div.Reese{
+	float: right;
+	width: 150px;
+	height: 150px;
+	padding-top: 30px;
+	padding-right: 90px;
+}
+div.machine{
+	float: left;
+	width: 150px;
+	height: 150px;
+	padding-top: 30px;
+	padding-left: 170px;
+	border-style: dashed;
+	border-color: yellow;
+}
+div.bear{
+	float: left;
+	width: 150px;
+	height: 150px;
+	padding-top: 180px;
+	padding-left: 170px;
+}
+div.Root{
+	clear: left;
+	padding-top: 180px;
+	width: 150px;
+	height: 150px;
+	padding-left: 50px;
+	border-style: dashed;
+	border-color: red;
+	float: left;
+}
+div.Shaw{
+	float: right;
+	width: 150px;
+	height: 100px;
+	padding-top: 180px;
+	padding-right: 90px;
+	padding-left: 120px;
+	border-style: dashed;
+	border-color: blue;
+}
+div.Cater{
+	clear: left;
+	width: 380px;
+	height: 100px;
+	padding-top: 180px;
+	padding-left: 50px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	float: left;
+}
+div.Fusco{
+	float: right;
+	width: 240px;
+	height: 100px;
+	padding-top: 180px;
+	padding-left: 70px;
+	padding-bottom: 50px;
+}
+div.blank{
+	width: 600px;
+	height: 380px;
+	position: relative;
+	left: 200px;
+	top: 350px;
+	border-style: dashed;
+	border-color: white;
+}
+
+p.Finch{
+	font-size: 25px;
+	color: white;
+	position:relative;
+	left: 26px;
+	border-style: dashed;
+	border-color: yellow;
+}
+p.Reese{
+	font-size: 26px;
+	color: white;
+	position:relative;
+	left: 26px;
+	border-style: dashed;
+	border-color: yellow;
+}
+p.themachine{
+	font-size: 25px;
+	color: white;
+	position:relative;
+	left: 45px;
+	border-style: dashed;
+	border-color: yellow;
+}
+p.Root{
+	font-size: 25px;
+	color: white;
+	position:relative;
+	left: 65px;
+	border-style: dashed;
+	border-color: yellow;
+	width: 60px;
+}
+p.Sameen{
+	font-size: 26px;
+	color: white;
+	position:relative;
+	left: 10px;
+	border-style: dashed;
+	border-color: yellow;
+	width: 175px;
+}
+p.Cater{
+	font-size: 26px;
+	color: white;
+	position: relative;
+	left: 40px;
+	border: dashed;
+	border-color: yellow;
+	width: 125px;
+}
+p.Fusco{
+	font-size: 26px;
+	color: white;
+	position: relative;
+	left: 20px;
+	border-style: dashed;
+	border-color: yellow;
+	width: 150px;
+}
+p.bear{
+	font-size: 26px;
+	color: white;
+	position: relative;
+	left: 70px;
+	border-style: dashed;
+	border-color: yellow;
+	width: 60px;
+}
+</style>
