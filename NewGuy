@@ -140,13 +140,15 @@ div.blank{
 	border-color: white;
 }
 
+
 p.Finch{
-	font-size: 25px;
-	color: white;
+
+
+color: white;
 	position:relative;
 	left: 26px;
 	border-style: dashed;
-	border-color: yellow;
+border-color: yellow;
 }
 p.Reese{
 	font-size: 26px;
