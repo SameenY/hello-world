@@ -1,0 +1,52 @@
+var addBtn = document.getElementById('add');
+var subtractBtn = document.getElementById('subtract');
+var multiplyBtn = document.getElementById('multiply');
+var divideBtn = document.getElementById('divide');
+//定义全局变量
+var a_int;
+var b_int;
+//为按钮添加点击方法
+addBtn.onclick = function(){
+	getInputNum();
+	var result = addition(a_int,b_int);
+	alert(result);
+};
+subtractBtn.onclick = function(){
+	getInputNum();
+	var result = subtraction(a_int,b_int);
+	alert(result);
+};
+multiplyBtn.onclick = function(){
+	getInputNum();
+	var result = multiplication(a_int,b_int);
+	alert(result);
+};
+divideBtn.onclick = function(){
+	getInputNum();
+	var result = division(a_int,b_int);
+	alert(result);
+};
+function getInputNum(){
+	var a = document.getElementById('Num1').value;
+	var b =document.getElementById('Num2').value;
+	a_int = parseInt(a,10);
+	b_int = parseInt(b,10);
+}
+function addition(x,y){
+	return x+y;
+}
+function subtraction(x,y){
+	return x - y;
+}
+function multiplication(x,y){
+	return x * y;
+}
+function division(x,y){
+	if (y == 0) {
+		alert("0不能做除数");
+		return;
+	}
+	else{
+		return x / y;
+	}
+}
