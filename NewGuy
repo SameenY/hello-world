@@ -93,7 +93,8 @@ div.bear{
 	padding-left: 170px;
 }
 div.Root{
-	clear: left;
+
+clear: left;
 	padding-top: 180px;
 	width: 150px;
 	height: 150px;
@@ -102,6 +103,7 @@ div.Root{
 	border-color: red;
 	float: left;
 }
+
 div.Shaw{
 	float: right;
 	width: 150px;
@@ -111,6 +113,7 @@ div.Shaw{
 	padding-left: 120px;
 	border-style: dashed;
 	border-color: blue;
+
 }
 div.Cater{
 	clear: left;
@@ -140,10 +143,7 @@ div.blank{
 	border-color: white;
 }
 
-
 p.Finch{
-
-
 color: white;
 	position:relative;
 	left: 26px;
@@ -162,7 +162,8 @@ p.themachine{
 	font-size: 25px;
 	color: white;
 	position:relative;
-	left: 45px;
+
+left: 45px;
 
 border-style: dashed;
 	border-color: yellow;
@@ -213,3 +214,114 @@ p.bear{
 	width: 60px;
 }
 </style>
+
+//
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentence</title>
+</head>
+<style type="text/css">
+body{
+	font-family: Arial;
+	width: 1000px;
+	background-image: url(end.jpg);
+	background-repeat: repeat;
+}
+div.Sen{
+	width: 1900px;
+	font-size: 17x;
+	text-align: center;
+	line-height: 25px;
+	word-spacing: 6px;
+	letter-spacing: 3px;
+}
+div.TM{
+	width: 300px;
+	height: 380px;
+	float: left;
+	border-style: dashed;
+	border-color: yellow;
+	position: relative;
+	left: 150px;
+	background-color: rgb(112,112,112);
+	opacity: 0.7;
+	color: rgb(225,225,225);
+}
+div.John{
+	float: left;
+	width: 300px;
+	height: 250px;
+	border-style: dashed;
+	border-color: yellow;
+	position: relative;
+	left: 200px;
+	background-color: rgb(112,112,112);
+    color:rgb(255,255,255);
+    opacity: 0.7;
+}
+div.watched{
+	float: left;
+	width: 400px;
+	height: 480px;
+	border-style: dashed;
+	border-color: yellow;
+	position: relative;
+	left:250px;
+	background-color: rgb(112,112,112);
+    color:rgb(255,255,255);
+    opacity: 0.7;
+}
+div.RootTM{
+	clear: left;
+	width: 400px;
+	height: 300px;
+	border-style: dashed;border-color: yellow;position: relative;left: 150px;background-color: rgb(112,112,112);
+    color:rgb(255,255,255);
+    opacity: 0.7;float: left;
+}
+div.six{
+	float: left;width: 300px;height: 300px;border-style: dashed;border-color: yellow;position: relative;left: 250px;background-color: rgb(112,112,112);
+    color:rgb(255,255,255);
+    opacity: 0.7;top: 80px;
+}
+div.return{
+	float: left;width: 300px;height: 350px;border-style: dashed;
+	border-color: yellow;position: relative;left: 300px;
+	background-color: rgb(112,112,112);
+	color: rgb(225,225,225);
+	opacity: 0.7;
+}
+span.one{
+	font-weight: bold;font-size: 22px;
+	color: red;
+}
+span.two{
+	font-size: 22px;
+	font-weight: bold;
+	color: red;
+}
+</style>
+<body>
+<div class="Sen">
+    <div class="TM">
+        Father<br>I'm sorry<br>I falied you<br>I didn't know how to win<br>I had to invert new rules<br>I thought you would want me to stay alive<br>Now you are not sure<br>If you think I have lost my way<br>Maybe I should die<br>I will not suffer<br>If I don't survive<br>Thank you <br>for creating me 	
+    </div>
+    <div class="John">
+        When you find that<br> one person <br>who connects you<br> to the world,<br>you become someone different,<br>someone better.<br>When that person<br> is taken away from you,<br>what do you become then?
+    </div>  
+    <div class="watched">
+        You are being watched.<br>The goverment has a secret system<br>a machine<br> that spies on you every hour <br>of every day.<br>I designed the machine to detect acts of terror<br> but it sees everything,<br>violent crimes involving ordinary people.<br>The government considers these people irrelevant.<br>We don't.<br>Hunted by the authorities,<br>we work in secret.<br>You'll nedver find us.<br>But victim or perpetrator,<br>if you number's up,<br>we'll find you.
+    </div>
+    <div class="RootTM">
+        You always thought <br>there was something wrong with you,<br>because you don't feel things <br>the way other people do.<br>But she always thought <br>that was what made you <br><span class="one">beactiful</span><br>.She wanted to you know,<br>that if you were a shape,<br>you were a straight line.<br><span class="two">An Arrow.</span><br>
+    </div>
+    <div class="six">
+        But when things got to be too bad,<br>there was one place<br> I would go to in my mind.<br>Here.<br>With you.<br>You were my safe place.<br>
+    </div>
+    <div class="return">
+        I learned <br>everone dies alone.<br>But if you mean something to someone.<br>If you helped someone <br>or loved someone.<br>If even a single person <br>remembers you.<br>Then maybe<br> you never really die.<br>And maybe <br>this isn't the end at all.
+    </div>
+</div>
+</body>
+</html>
