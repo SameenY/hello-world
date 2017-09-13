@@ -50,3 +50,34 @@ function division(x,y){
 		return x / y;
 	}
 }
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>HTML5敏捷实践练习</title>
+</head>
+<body>
+<div class="container">
+<h1>Choose Your weapom</h1>
+<p>
+    Click on one of the selections below to find out more info about your character:
+</p>
+<ul id="myList">
+    <li data-description= "Most powerful goblin in entire kingdom">Lido</li>
+    <li data-description= "Ruler over all boblins big and small">
+    Jareth the Goblin King
+    </li>
+    <li data-description="Only person who can put a stop to the Goblin King">
+    Sarah
+    </li>
+    <li data-description="Unsumg hero of the goblin kingdom">
+    Hoggle
+    </li>
+</ul>
+<p id="displayTarg" class="well"></p>
+</div>
+</body>
+</html>
