@@ -10,7 +10,7 @@ addBtn.onclick = function(){
 	getInputNum();
 	var result = addition(a_int,b_int);
 	alert(result);
-};
+}
 subtractBtn.onclick = function(){
 	getInputNum();
 	var result = subtraction(a_int,b_int);
@@ -19,16 +19,25 @@ subtractBtn.onclick = function(){
 multiplyBtn.onclick = function(){
 	getInputNum();
 	var result = multiplication(a_int,b_int);
-	alert(result);
+
+alert(result);
 };
 divideBtn.onclick = function(){
 	getInputNum();
 	var result = division(a_int,b_int);
 	alert(result);
-};
+<script type="text/javascript">
+$.each(array,function(){
+	var array= ['one','two','three','four','five'];
+	$.each(array,function(value){
+		console,log(value);
+	})
+});
+</script>};
 function getInputNum(){
 	var a = document.getElementById('Num1').value;
-	var b =document.getElementById('Num2').value;
+
+var b =document.getElementById('Num2').value;
 	a_int = parseInt(a,10);
 	b_int = parseInt(b,10);
 }
@@ -56,7 +65,7 @@ function division(x,y){
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"
 	<title>HTML5敏捷实践练习</title>
 </head>
 <body>
@@ -65,7 +74,7 @@ function division(x,y){
 <p>
     Click on one of the selections below to find out more info about your character:
 </p>
-<ul id="myList">
+<ul id="myList"
     <li data-description= "Most powerful goblin in entire kingdom">Lido</li>
     <li data-description= "Ruler over all boblins big and small">
     Jareth the Goblin King
@@ -74,10 +83,22 @@ function division(x,y){
     Sarah
     </li>
     <li data-description="Unsumg hero of the goblin kingdom">
-    Hoggle
+    Hoggl
     </li>
 </ul>
 <p id="displayTarg" class="well"></p>
 </div>
 </body>
 </html>
+<script type="text/javascript">
+$.each(array,function(){
+	var array= ['one','two','three','four','five'];
+	$.each(array,function(value){
+		console,log(value);
+	})
+});
+
+
+
+
+</script>
