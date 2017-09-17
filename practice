@@ -40,7 +40,7 @@ function getInputNum(){
 var b =document.getElementById('Num2').value;
 	a_int = parseInt(a,10);
 	b_int = parseInt(b,10);
-}
+https://github.com/SameenY}
 function addition(x,y){
 	return x+y;
 }
@@ -49,6 +49,7 @@ function subtraction(x,y){
 }
 function multiplication(x,y){
 	return x * y;
+
 }
 function division(x,y){
 	if (y == 0) {
