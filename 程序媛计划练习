@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <mate charset="UTF-8">
+</head>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
+<body style="width: 1000px; margin:0 auto;">
+    <div style="width: 100%;text-align: center;margin-top: 50px;"
+        <h1>hahahahhaha</div>
+    <hr>
+    <div style="width: 100%;text-align: center;">
+        <h3 style="color: gray;">12345</h3>
+    </div>
+    <div id="all_teas" style="width: 100%;">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.ajax({
+            	type='GET',
+            	url;"http://resource.haorenao.cn/teas2.json",
+            	success:function(data){
+            		var teas = data;
+            		console.log(teas);
+            		$.each(teas.function(key,value){
+            			var title = value.title;
+            			var image= value.image;
+            			var price = value.price;//通过控制台看到数组的每一项都有image price title三个字段，并且均有值，通过value.title获取到值，现在value代表每一项(0,1,2,3,4,5)//
+            			var html='<div style= "width:333px;height:300px;float:left;text-align:center;margin:10px 0;">'
+            			    +'<h1 style="margin : 0;">'+title+'<h1>'
+            			    +'<img width="200" height="200" src="'+image+'">'
+            			    +'<p>价格:'+price+'</p>'
+            			    +'</div>';
+            			$('#all_teas').append(html);
+            		});
+            	}
+            });
+        });
+    </script>
+</body>
+</html>
