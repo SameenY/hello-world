@@ -24,17 +24,15 @@
             			var title = value.title;
             			var image= value.image;
             			var price = value.price;//通过控制台看到数组的每一项都有image price title三个字段，并且均有值，通过value.title获取到值，现在value代表每一项(0,1,2,3,4,5)//
-            			var html='<div style= "width:333px;height:300px;float:left;text-align:center;margin:10px 0;">'
+
+var html='<div style= "width:333px;height:300px;float:left;text-align:center;margin:10px 0;">'
             			    +'<h1 style="margin : 0;">'+title+'<h1>'
             			    +'<img width="200" height="200" src="'+image+'">'
             			    +'<p>价格:'+price+'</p>'
             			    +'</div>';
             			$('#all_teas').append(html);
             		});
-            	}
-            });
-        });
-    </script>
+
 </body>
 </html>
 
@@ -62,6 +60,26 @@
     $('.text-btn').click(function(){
     	$('.text-content').html($('.text-input').val())
     })
+    
+    var day = new Date().getDay();
+    switch(day){
+    	case 0:console.log('Sunday');break;
+    	case 1:console.log('Monday');break;
+    	case 2:console.log('TueDay');break;
+    	case 3:console.log('WensDay');break;
+    	case 4:console.log('ThursDay');break;
+    	case 5:console.log('FriDay');break;
+    	case 6:console.log('liu');break;
+    }
+    for (var i=0;i<5;i++) {
+    	console.log(i);
+    }
+    var a = 1;
+    while(a<10){
+    	console.log(a*a);
+    	a++;
+    }
+    
 </script>
 </body>
 </html>
