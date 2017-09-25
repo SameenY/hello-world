@@ -7,7 +7,8 @@
 <body style="width: 1000px; margin:0 auto;">
     <div style="width: 100%;text-align: center;margin-top: 50px;"
         <h1>hahahahhaha</div>
-    <hr>
+
+<hr>
     <div style="width: 100%;text-align: center;">
         <h3 style="color: gray;">12345</h3>
     </div>
@@ -16,7 +17,8 @@
         $(document).ready(function(){
             $.ajax({
             	type='GET',
-            	url;"http://resource.haorenao.cn/teas2.json",
+
+url;"http://resource.haorenao.cn/teas2.json",
             	success:function(data){
             		var teas = data;
             		console.log(teas);
@@ -24,6 +26,7 @@
             			var title = value.title;
             			var image= value.image;
             			var price = value.price;//通过控制台看到数组的每一项都有image price title三个字段，并且均有值，通过value.title获取到值，现在value代表每一项(0,1,2,3,4,5)//
+
 
 var html='<div style= "width:333px;height:300px;float:left;text-align:center;margin:10px 0;">'
             			    +'<h1 style="margin : 0;">'+title+'<h1>'
@@ -36,9 +39,10 @@ var html='<div style= "width:333px;height:300px;float:left;text-align:center;mar
 </body>
 </html>
 
-    
 <!DOCTYPE html>
 <html>
+
+
 <head>
 	<meta charset="utf-8">
 	<title>js高级练习</title>
@@ -81,5 +85,32 @@ var html='<div style= "width:333px;height:300px;float:left;text-align:center;mar
     }
     
 </script>
-</body>
+
+    <button class="hide">hide</button>
+    <button class="show">show</button>
+    <button class="toggle">按钮</button>
+    <button class="fadeIn">淡入</button>
+    <button class="fadeOut">淡出</button>
+    <div class="box"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('.hide').click(function(){
+        	$('.box').hide();
+        })
+        $('.show').click(function(){
+        	$('.box').show();
+        })
+        $('.toggle').click(function(){
+        	$('.box').toggle();
+        })
+        $('.fadeIn').click(function(){
+        	$('.box').fadeIn();
+        })
+        $('.fadeOut').click(function(){
+        	$('.box').fadeOut();
+        })
+    </script>            	}
+            });
+        });
+    </script></body>
 </html>
