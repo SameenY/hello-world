@@ -42,7 +42,8 @@ var b =document.getElementById('Num2').value;
 	b_int = parseInt(b,10);
 https://github.com/SameenY}
 function addition(x,y){
-	return x+y;
+
+return x+y;
 }
 function subtraction(x,y){
 	return x - y;
@@ -54,12 +55,39 @@ function multiplication(x,y){
 function division(x,y){
 	if (y == 0) {
 		alert("0不能做除数");
-		return;
+
+dreturn;
 	}
 	else{
 		return x / y;
 	}
-}
+}	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js高级练习</title>
+</head>
+<script type="text/javascript">
+    function openWindow(){
+        var mypage = comfire("是否打开新窗口？");
+        if(mypage==true){
+            var newpage = prompt("通过输入框，确定打开网址","http://www.imooc.com");
+            if(newpage!=null){
+                window.open(newpage,"_blank","width=400px,height=500px,menubar=no,toolbar=no");
+            }
+            else{
+                alert("再见");
+            }
+        }
+        else{
+            alert("再见");
+        }
+    }
+</script>
+<body>
+    <input type="button" value="新窗口打开网站" class="newpage">
+</body>
+</html>
 
 
 
