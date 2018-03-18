@@ -1,0 +1,152 @@
+5.10排序并显示名字
+HTML部分
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript入门经典</title>
+	<meta charset="utf-8">
+	<!-- 引入js文件 -->
+	<script type="text/javascript" src = "sort.js">
+    </script>
+</head>
+<body>
+<h1>Sorting String Arrays</h1>
+<p>Enter two or more names in the field belowm
+and the sorted list of names will appear in the text area.</p>
+<!-- 建立一个表单 -->
+<form name = "theform">
+Name:
+<!-- 创建文本输入框 -->
+<input type="text" name="newname" size="20">
+<!-- 添加按钮，并单机启动SortNames()函数 -->
+<input type="button" name="addname" value="Add" onclick="SortNames();">
+<br>
+<h2>Sroted Names</h2>
+<textarea cols="60" rows="10" name="sorted">
+The sorted names will appear here.</textarea>
+</form>
+</body>
+</html>
+Js部分
+//定义两个变量，numnames用于每个人名字加入后计数
+//names数组用于存储这些名字
+var numnames = 0;
+var names = new Array();
+function SortNames(){
+	// 调取输入的文本
+	thename = document.theform.newname.value;
+	// 把文本加入names数组，并使用numnames作为索引值
+	names[numnames]=thename;
+	// 递增准备下一个名字
+	numnames++;
+	// 用sort()方法对名字进行排序
+	names.sort();
+	// 用join()方法合并名字，之间用换行分开
+	document.theform.sorted.value=names.join("\n");
+}
+
+
+6.4 扩展内置对象
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test of heading method</title>
+</head>
+<body>
+<script type="text/javascript">
+	function addhead(level){
+		html = "H" + level;
+		text = this.toString();
+		start = "<" + html + "/>";
+		stop = "</" + html + ">";
+		return start + text + stop;
+	}
+	String.prototype.heading = addhead;
+	document.write("This is a heading 1".heading(1));
+</script>
+</body>
+</html>
+
+
+6.5 使用对象保存数组
+      保存已知对象
+HTML部分
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Business Cards</title>
+</head>
+<body>
+	<h1>JavaScript Business Cards</h1>
+	<p>Script begins here.</p>
+	<script type="text/javascript" src = "sort.js"></script>
+	<p>End of script</p>
+</body>
+</html>
+Js部分
+//创建一个PrintCard函数，用于将内容输出
+function PrintCard(){
+	line1 = "Name:"+this.name+"</br>\n";
+	line2 = "Address" + this.address + "</br>\n";
+	line3 = "Phone" + this.phone + "</br>\n";
+	document.write(line1,line2,line3);
+}
+// 创建一个Card函数，带有变量，将内容复制给Print Card函数
+function Card(name,address,phone){
+	this.name = name;
+	this.address = address;
+	this.phone = phone;
+	this.PrintCard = PrintCard;
+}
+// 要存储的信息
+Sameen = new Card("Sameen","NewYork","6741");
+Samantha = new Card("Samantha","NewYork","050313");
+// 输出存储的信息
+Sameen.PrintCard();
+Samantha.PrintCard()；
+
+
+
+12.7 利用js修改css样式
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controlling Styles with JavaScript</title>
+	<script type="text/javascript" src = "sort.js"></script>
+</head>
+<body>
+<h1 id="head1">Controlling Styles with JavaScript</h1>
+<p id="p1">
+XXXXXXXXXXXXXXXXXXXX
+</p>
+<form name="form1">
+<b>Heading colors : </b>
+<select name="heading" onchange="changehead();">
+	<option value="black">Black</option>
+	<option value="red">Red</option>
+	<option value="green">Green</option>
+</select>
+<br>
+<b>Body colors :</b>
+<select name="body" onchange="changebody();">
+	<option value="black">Blace</option>
+	<option value="red">Red</option>
+	<option value="green">Green</option>
+</select>
+</form>
+</body>
+</html>
+ 
+Js部分
+function changehead(){
+	i = document.form1.heading.selectedIndex;
+	headcolor = document.form1.heading.options[i].value;
+	document.getElementById("head1").style.color = headcolor;
+}
+function changebody(){
+	 i = document.form1.body.selectedIndex;
+	 bodycolor = document.form1.body.options[i].value;
+	 document.getElementById("p1").style.color = bodycolor;
+}
